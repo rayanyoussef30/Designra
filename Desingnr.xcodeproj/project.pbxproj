@@ -19,6 +19,8 @@
 		F18020822BDEAB870037AF4E /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F18020812BDEAB870037AF4E /* Colors.xcassets */; };
 		F18020892BDEC0BE0037AF4E /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18020872BDEC0BE0037AF4E /* MainVC.swift */; };
 		F180208A2BDEC0BE0037AF4E /* MainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F18020882BDEC0BE0037AF4E /* MainVC.xib */; };
+		F18020B12BE803810037AF4E /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18020AF2BE803810037AF4E /* TabBar.swift */; };
+		F18020B22BE803810037AF4E /* TabBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = F18020B02BE803810037AF4E /* TabBar.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		F18020812BDEAB870037AF4E /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		F18020872BDEC0BE0037AF4E /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		F18020882BDEC0BE0037AF4E /* MainVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainVC.xib; sourceTree = "<group>"; };
+		F18020AF2BE803810037AF4E /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		F18020B02BE803810037AF4E /* TabBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabBar.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,8 @@
 				F18020812BDEAB870037AF4E /* Colors.xcassets */,
 				F18020872BDEC0BE0037AF4E /* MainVC.swift */,
 				F18020882BDEC0BE0037AF4E /* MainVC.xib */,
+				F18020AF2BE803810037AF4E /* TabBar.swift */,
+				F18020B02BE803810037AF4E /* TabBar.xib */,
 			);
 			path = Desingnr;
 			sourceTree = "<group>";
@@ -150,6 +156,7 @@
 				F18020802BDE95A70037AF4E /* PremiumVC.xib in Resources */,
 				F180208A2BDEC0BE0037AF4E /* MainVC.xib in Resources */,
 				F180206B2BD820D70037AF4E /* Assets.xcassets in Resources */,
+				F18020B22BE803810037AF4E /* TabBar.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +170,7 @@
 				F18020622BD820D60037AF4E /* AppDelegate.swift in Sources */,
 				F18020892BDEC0BE0037AF4E /* MainVC.swift in Sources */,
 				F18020772BD821910037AF4E /* HomeVC.swift in Sources */,
+				F18020B12BE803810037AF4E /* TabBar.swift in Sources */,
 				F180207F2BDE95A70037AF4E /* PremiumVC.swift in Sources */,
 				F180207B2BD82B190037AF4E /* LoginVC.swift in Sources */,
 			);

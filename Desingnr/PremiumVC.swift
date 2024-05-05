@@ -45,7 +45,7 @@ class PremiumVC: UIViewController {
     }
     
     @IBAction func goPremiumClicked(_ sender: Any) {
-        let vc = MainVC()
+        let vc = TabBar()
         navigationController?.pushViewController(vc, animated: true)
     }
 }
