@@ -44,4 +44,8 @@ class PremiumVC: UIViewController {
         yearViewBig.layer.borderWidth = 1
     }
     
+    @IBAction func goPremiumClicked(_ sender: Any) {
+        let vc = MainVC()
+        navigationController?.pushViewController(vc, animated: true)
+    }
 }

@@ -5,7 +5,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -24,7 +23,7 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bild3" translatesAutoresizingMaskIntoConstraints="NO" id="1ew-0a-OX1">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PremiumImg" translatesAutoresizingMaskIntoConstraints="NO" id="1ew-0a-OX1">
                     <rect key="frame" x="33" y="69" width="327" height="294.33333333333331"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="1ew-0a-OX1" secondAttribute="height" multiplier="309:278" id="QD0-Tc-6W7"/>
@@ -35,7 +34,7 @@
                     <string key="text">Get unlimited
 access!</string>
                     <fontDescription key="fontDescription" type="system" pointSize="38"/>
-                    <color key="textColor" red="0.17254901960784313" green="0.16862745098039217" blue="0.27843137254901962" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="textColor" name="Title"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="JGH-kx-zS6">
@@ -50,7 +49,7 @@ access!</string>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$11.99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UkL-XD-MgQ">
                                             <rect key="frame" x="0.0" y="0.0" width="76.666666666666671" height="27"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                                            <color key="textColor" red="0.17254901960784313" green="0.16862745098039217" blue="0.27843137254901962" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="textColor" name="mainPrice"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="tQq-A6-yxu">
@@ -62,13 +61,13 @@ access!</string>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$11.99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1d-6g-fck">
                                                             <rect key="frame" x="0.0" y="0.0" width="41.666666666666664" height="15.666666666666666"/>
                                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
-                                                            <color key="textColor" red="0.52941176470588236" green="0.52549019607843139" blue="0.61960784313725492" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="textColor" name="BetweenPrice"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="per month" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v8G-iE-yOY">
                                                             <rect key="frame" x="43.666666666666671" y="0.0" width="62.333333333333329" height="15.666666666666666"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                            <color key="textColor" red="0.72549019607843135" green="0.72156862745098038" blue="0.77647058823529413" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="textColor" name="MYTitle"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
@@ -79,13 +78,13 @@ access!</string>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$143.99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t2U-4o-yjy">
                                                             <rect key="frame" x="0.0" y="0.0" width="54" height="15.666666666666666"/>
                                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
-                                                            <color key="textColor" red="0.52941176470588236" green="0.52549019607843139" blue="0.61960784313725492" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="textColor" name="BetweenPrice"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="per year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ytb-8Y-CpP">
                                                             <rect key="frame" x="56" y="0.0" width="50" height="15.666666666666666"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                            <color key="textColor" red="0.72549019607843135" green="0.72156862745098038" blue="0.77647058823529413" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="textColor" name="MYTitle"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
@@ -102,7 +101,7 @@ access!</string>
                                     </connections>
                                 </button>
                             </subviews>
-                            <color key="backgroundColor" name="#F2F2F3"/>
+                            <color key="backgroundColor" name="PriceBackground"/>
                             <constraints>
                                 <constraint firstAttribute="trailing" secondItem="EfG-Zd-UQI" secondAttribute="trailing" id="30i-sd-4Ii"/>
                                 <constraint firstItem="EfG-Zd-UQI" firstAttribute="top" secondItem="jW5-UU-S56" secondAttribute="top" id="BIi-Xu-dat"/>
@@ -123,7 +122,7 @@ access!</string>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$4.99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="08X-bt-K8F">
                                             <rect key="frame" x="0.0" y="0.0" width="69.333333333333329" height="27"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                                            <color key="textColor" red="0.17254901959999999" green="0.16862745100000001" blue="0.2784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="textColor" name="mainPrice"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="aT4-mx-yKz">
@@ -135,13 +134,13 @@ access!</string>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$4.99 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qsV-F0-nkQ">
                                                             <rect key="frame" x="0.0" y="0.0" width="41.333333333333336" height="15.666666666666666"/>
                                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
-                                                            <color key="textColor" red="0.52941176469999995" green="0.52549019610000003" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="textColor" name="BetweenPrice"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="per month" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oxb-FV-9gk">
                                                             <rect key="frame" x="43.333333333333314" y="0.0" width="62.333333333333343" height="15.666666666666666"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                            <color key="textColor" red="0.72549019609999998" green="0.72156862749999995" blue="0.77647058820000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="textColor" name="MYTitle"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
@@ -152,13 +151,13 @@ access!</string>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$59.99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5rc-DU-FjC">
                                                             <rect key="frame" x="0.0" y="0.0" width="53.666666666666664" height="15.666666666666666"/>
                                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
-                                                            <color key="textColor" red="0.52941176469999995" green="0.52549019610000003" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="textColor" name="BetweenPrice"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="per year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y6P-Uc-mGA">
                                                             <rect key="frame" x="55.666666666666686" y="0.0" width="50" height="15.666666666666666"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                            <color key="textColor" red="0.72549019609999998" green="0.72156862749999995" blue="0.77647058820000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="textColor" name="MYTitle"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
@@ -175,7 +174,7 @@ access!</string>
                                     </connections>
                                 </button>
                             </subviews>
-                            <color key="backgroundColor" name="#F2F2F3"/>
+                            <color key="backgroundColor" name="PriceBackground"/>
                             <constraints>
                                 <constraint firstItem="Lbq-F0-VUK" firstAttribute="top" secondItem="rXV-i1-ngW" secondAttribute="top" id="3ug-G5-QdL"/>
                                 <constraint firstAttribute="bottom" secondItem="wvo-EU-XHn" secondAttribute="bottom" constant="22" id="Fh4-bn-nOc"/>
@@ -185,12 +184,10 @@ access!</string>
                                 <constraint firstItem="Lbq-F0-VUK" firstAttribute="leading" secondItem="rXV-i1-ngW" secondAttribute="leading" id="VJD-dk-WBW"/>
                                 <constraint firstItem="wvo-EU-XHn" firstAttribute="top" secondItem="rXV-i1-ngW" secondAttribute="top" constant="22" id="dfE-02-XMp"/>
                                 <constraint firstItem="wvo-EU-XHn" firstAttribute="leading" secondItem="rXV-i1-ngW" secondAttribute="leading" constant="22" id="q9c-L7-z37"/>
+                                <constraint firstAttribute="width" secondItem="rXV-i1-ngW" secondAttribute="height" multiplier="156:127" id="ru6-Fd-G8x"/>
                             </constraints>
                         </view>
                     </subviews>
-                    <constraints>
-                        <constraint firstItem="rXV-i1-ngW" firstAttribute="width" secondItem="rXV-i1-ngW" secondAttribute="height" multiplier="156:127" id="ru6-Fd-G8x"/>
-                    </constraints>
                 </stackView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fAs-Wv-OgT">
                     <rect key="frame" x="122.33333333333333" y="509.33333333333331" width="56.666666666666671" height="18.666666666666686"/>
@@ -228,19 +225,22 @@ access!</string>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xkt-Ze-ujZ">
                     <rect key="frame" x="96.333333333333329" y="682.66666666666663" width="200.33333333333337" height="60.666666666666629"/>
-                    <color key="backgroundColor" red="0.17254901960784313" green="0.16862745098039217" blue="0.27843137254901962" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" name="BackgroundBtn"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="Xkt-Ze-ujZ" secondAttribute="height" multiplier="191:58" id="adH-ZE-4WJ"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                     <state key="normal" title="Go Premium">
-                        <color key="titleColor" red="1" green="0.94509803921568625" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleColor" name="TitleBtn"/>
                     </state>
+                    <connections>
+                        <action selector="goPremiumClicked:" destination="-1" eventType="touchUpInside" id="uo8-DS-Pbb"/>
+                    </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" name="Background"/>
             <constraints>
                 <constraint firstItem="SrG-Cs-sTa" firstAttribute="top" secondItem="rXV-i1-ngW" secondAttribute="top" constant="-9" id="0Kc-Tl-Nsa"/>
                 <constraint firstItem="JGH-kx-zS6" firstAttribute="top" secondItem="vw0-Jc-Hdg" secondAttribute="bottom" constant="31" id="3yV-RB-eFZ"/>
@@ -266,12 +266,30 @@ access!</string>
         </view>
     </objects>
     <resources>
-        <image name="bild3" width="309" height="278"/>
-        <namedColor name="#F2F2F3">
+        <image name="PremiumImg" width="206" height="185.33332824707031"/>
+        <namedColor name="Background">
+            <color red="0.99999994039535522" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="BackgroundBtn">
+            <color red="0.17254901960784313" green="0.16862745098039217" blue="0.27843137254901962" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="BetweenPrice">
+            <color red="0.52941176470588236" green="0.52549019607843139" blue="0.61960784313725492" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="MYTitle">
+            <color red="0.72549019607843135" green="0.72156862745098038" blue="0.77647058823529413" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="PriceBackground">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <namedColor name="Title">
+            <color red="0.17254901960784313" green="0.16862745098039217" blue="0.27843137254901962" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TitleBtn">
+            <color red="1" green="0.94509803921568625" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="mainPrice">
+            <color red="0.17254901960784313" green="0.16862745098039217" blue="0.27843137254901962" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>
