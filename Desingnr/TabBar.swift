@@ -25,6 +25,8 @@ addTabBar()
         let settings = MainVC()
         settings.tabBarItem = TabBarItem(title:"" , unselImg: "settingUnsel", selImg: "settingSel")
         
+       
+        
         viewControllers = [main, favorit, settings]
         
     }

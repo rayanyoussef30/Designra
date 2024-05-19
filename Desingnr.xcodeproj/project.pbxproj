@@ -21,6 +21,11 @@
 		F180208A2BDEC0BE0037AF4E /* MainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F18020882BDEC0BE0037AF4E /* MainVC.xib */; };
 		F18020B12BE803810037AF4E /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18020AF2BE803810037AF4E /* TabBar.swift */; };
 		F18020B22BE803810037AF4E /* TabBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = F18020B02BE803810037AF4E /* TabBar.xib */; };
+		F18020D92BFA65720037AF4E /* ProductsTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18020D72BFA65720037AF4E /* ProductsTVCell.swift */; };
+		F18020DA2BFA65720037AF4E /* ProductsTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F18020D82BFA65720037AF4E /* ProductsTVCell.xib */; };
+		F18020DD2BFA68D30037AF4E /* CategoriesCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18020DB2BFA68D30037AF4E /* CategoriesCVCell.swift */; };
+		F18020DE2BFA68D30037AF4E /* CategoriesCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F18020DC2BFA68D30037AF4E /* CategoriesCVCell.xib */; };
+		F18020E02BFA69D40037AF4E /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18020DF2BFA69D40037AF4E /* Category.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +45,11 @@
 		F18020882BDEC0BE0037AF4E /* MainVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainVC.xib; sourceTree = "<group>"; };
 		F18020AF2BE803810037AF4E /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		F18020B02BE803810037AF4E /* TabBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabBar.xib; sourceTree = "<group>"; };
+		F18020D72BFA65720037AF4E /* ProductsTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsTVCell.swift; sourceTree = "<group>"; };
+		F18020D82BFA65720037AF4E /* ProductsTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductsTVCell.xib; sourceTree = "<group>"; };
+		F18020DB2BFA68D30037AF4E /* CategoriesCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesCVCell.swift; sourceTree = "<group>"; };
+		F18020DC2BFA68D30037AF4E /* CategoriesCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriesCVCell.xib; sourceTree = "<group>"; };
+		F18020DF2BFA69D40037AF4E /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +97,11 @@
 				F18020882BDEC0BE0037AF4E /* MainVC.xib */,
 				F18020AF2BE803810037AF4E /* TabBar.swift */,
 				F18020B02BE803810037AF4E /* TabBar.xib */,
+				F18020D72BFA65720037AF4E /* ProductsTVCell.swift */,
+				F18020D82BFA65720037AF4E /* ProductsTVCell.xib */,
+				F18020DB2BFA68D30037AF4E /* CategoriesCVCell.swift */,
+				F18020DC2BFA68D30037AF4E /* CategoriesCVCell.xib */,
+				F18020DF2BFA69D40037AF4E /* Category.swift */,
 			);
 			path = Desingnr;
 			sourceTree = "<group>";
@@ -149,6 +164,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F18020DE2BFA68D30037AF4E /* CategoriesCVCell.xib in Resources */,
 				F180206E2BD820D70037AF4E /* LaunchScreen.storyboard in Resources */,
 				F18020782BD821910037AF4E /* HomeVC.xib in Resources */,
 				F180207C2BD82B190037AF4E /* LoginVC.xib in Resources */,
@@ -156,6 +172,7 @@
 				F18020802BDE95A70037AF4E /* PremiumVC.xib in Resources */,
 				F180208A2BDEC0BE0037AF4E /* MainVC.xib in Resources */,
 				F180206B2BD820D70037AF4E /* Assets.xcassets in Resources */,
+				F18020DA2BFA65720037AF4E /* ProductsTVCell.xib in Resources */,
 				F18020B22BE803810037AF4E /* TabBar.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -167,9 +184,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F18020DD2BFA68D30037AF4E /* CategoriesCVCell.swift in Sources */,
 				F18020622BD820D60037AF4E /* AppDelegate.swift in Sources */,
 				F18020892BDEC0BE0037AF4E /* MainVC.swift in Sources */,
+				F18020D92BFA65720037AF4E /* ProductsTVCell.swift in Sources */,
 				F18020772BD821910037AF4E /* HomeVC.swift in Sources */,
+				F18020E02BFA69D40037AF4E /* Category.swift in Sources */,
 				F18020B12BE803810037AF4E /* TabBar.swift in Sources */,
 				F180207F2BDE95A70037AF4E /* PremiumVC.swift in Sources */,
 				F180207B2BD82B190037AF4E /* LoginVC.swift in Sources */,

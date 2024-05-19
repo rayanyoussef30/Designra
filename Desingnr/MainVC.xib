@@ -10,6 +10,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainVC" customModule="Desingnr" customModuleProvider="target">
             <connections>
+                <outlet property="categoriesCV" destination="X2W-5K-xMQ" id="kr9-oz-CWS"/>
+                <outlet property="productsTV" destination="pg9-g1-Yoj" id="xhZ-l5-CeV"/>
+                <outlet property="searchView" destination="YLh-jR-NHJ" id="Yt3-XO-DSz"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -17,14 +20,102 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t66-09-Oq0">
+                    <rect key="frame" x="22" y="80" width="17.666666666666671" height="17.666666666666671"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="t66-09-Oq0" secondAttribute="height" multiplier="1:1" id="kmq-Ew-adU"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="Menu"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1is-Tr-JVX">
+                    <rect key="frame" x="339.66666666666669" y="80" width="31.333333333333314" height="31.333333333333329"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="1is-Tr-JVX" secondAttribute="height" multiplier="1:1" id="wFg-9Q-qib"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="Avatar"/>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YLh-jR-NHJ">
+                    <rect key="frame" x="22" y="141.33333333333334" width="349" height="52.666666666666657"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="rTz-Ec-T1f">
+                            <rect key="frame" x="24" y="0.0" width="301" height="52.666666666666664"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="searchL" translatesAutoresizingMaskIntoConstraints="NO" id="1Q1-nP-5ny">
+                                    <rect key="frame" x="0.0" y="20.333333333333314" width="12.666666666666666" height="12.333333333333336"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="1Q1-nP-5ny" secondAttribute="height" multiplier="1:1" id="y1z-Ms-3ph"/>
+                                    </constraints>
+                                </imageView>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zvQ-Qj-6jL">
+                                    <rect key="frame" x="28.666666666666657" y="0.0" width="272.33333333333337" height="52.666666666666664"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" name="searchBg"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="rTz-Ec-T1f" secondAttribute="trailing" constant="24" id="FwQ-Tx-vGZ"/>
+                        <constraint firstItem="rTz-Ec-T1f" firstAttribute="leading" secondItem="YLh-jR-NHJ" secondAttribute="leading" constant="24" id="Fy3-nY-pzQ"/>
+                        <constraint firstAttribute="bottom" secondItem="rTz-Ec-T1f" secondAttribute="bottom" id="UTk-zY-aum"/>
+                        <constraint firstItem="zvQ-Qj-6jL" firstAttribute="height" secondItem="YLh-jR-NHJ" secondAttribute="height" id="ZaH-LD-W8U"/>
+                        <constraint firstAttribute="width" secondItem="YLh-jR-NHJ" secondAttribute="height" multiplier="331:50" id="tRU-D2-Lig"/>
+                        <constraint firstItem="rTz-Ec-T1f" firstAttribute="top" secondItem="YLh-jR-NHJ" secondAttribute="top" id="uRJ-Eq-v9B"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="X2W-5K-xMQ">
+                    <rect key="frame" x="22" y="215" width="371" height="34.666666666666657"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="AFP-p8-mQ6">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="pg9-g1-Yoj">
+                    <rect key="frame" x="22" y="279.66666666666669" width="349" height="538.33333333333326"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" name="Background"/>
-            <point key="canvasLocation" x="-73" y="20"/>
+            <constraints>
+                <constraint firstItem="X2W-5K-xMQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="22" id="80u-En-uqw"/>
+                <constraint firstItem="1is-Tr-JVX" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="21" id="8mC-0r-JnO"/>
+                <constraint firstItem="t66-09-Oq0" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="21" id="ARG-HZ-2gb"/>
+                <constraint firstItem="X2W-5K-xMQ" firstAttribute="top" secondItem="YLh-jR-NHJ" secondAttribute="bottom" constant="21" id="Cpi-fj-1ra"/>
+                <constraint firstItem="YLh-jR-NHJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="22" id="E1b-9x-59X"/>
+                <constraint firstItem="t66-09-Oq0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="22" id="Erc-9h-eqS"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="YLh-jR-NHJ" secondAttribute="trailing" constant="22" id="HwZ-Ev-zPR"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="pg9-g1-Yoj" secondAttribute="trailing" constant="22" id="KVW-SM-PKG"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="1is-Tr-JVX" secondAttribute="trailing" constant="22" id="LZ5-sZ-RAV"/>
+                <constraint firstItem="1is-Tr-JVX" firstAttribute="width" secondItem="fnl-2z-Ty3" secondAttribute="width" multiplier="0.08" id="PgF-qU-szT"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="pg9-g1-Yoj" secondAttribute="bottom" id="WpU-JI-HFn"/>
+                <constraint firstItem="pg9-g1-Yoj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="22" id="Wzi-la-Qwp"/>
+                <constraint firstItem="1Q1-nP-5ny" firstAttribute="width" secondItem="fnl-2z-Ty3" secondAttribute="width" multiplier="0.032" id="X3B-Ro-RMs"/>
+                <constraint firstItem="pg9-g1-Yoj" firstAttribute="top" secondItem="X2W-5K-xMQ" secondAttribute="bottom" constant="30" id="YnY-cX-LPt"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="X2W-5K-xMQ" secondAttribute="trailing" id="eRu-eT-d5j"/>
+                <constraint firstItem="t66-09-Oq0" firstAttribute="width" secondItem="fnl-2z-Ty3" secondAttribute="width" multiplier="0.0453333" id="gQ2-q4-Jzm"/>
+                <constraint firstItem="YLh-jR-NHJ" firstAttribute="top" secondItem="1is-Tr-JVX" secondAttribute="bottom" constant="30" id="lj0-II-Tcq"/>
+                <constraint firstItem="X2W-5K-xMQ" firstAttribute="height" secondItem="fnl-2z-Ty3" secondAttribute="width" multiplier="0.088" id="xct-Nu-B5n"/>
+            </constraints>
+            <point key="canvasLocation" x="-74.045801526717554" y="19.718309859154932"/>
         </view>
     </objects>
     <resources>
+        <image name="Avatar" width="30" height="30"/>
+        <image name="Menu" width="17" height="17"/>
+        <image name="searchL" width="13.666666984558105" height="13.666666984558105"/>
         <namedColor name="Background">
-            <color red="0.99999994039535522" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="searchBg">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
